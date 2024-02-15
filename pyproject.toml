@@ -8,6 +8,14 @@ packages = [
   { include = "brain_games" },
 ]
 repository = "https://github.com/fomineandrei/python-project-49"
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Other Audience",
+  "Natural Language :: English",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3.10",
+  "Topic :: Education",
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
