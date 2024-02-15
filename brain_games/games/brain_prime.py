@@ -5,6 +5,7 @@ import random
 from brain_games.games.functions import welcome_user
 from brain_games.games.functions import game_check
 
+
 # Функция создания списка вопросов Простое это число?
 # Каждое значение списка заполняется из интервала от 2 до 100 случайным числом
 # или значением из списка простых чисел с вероятностью 0.5 для каждого случая
