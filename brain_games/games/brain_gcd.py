@@ -2,9 +2,9 @@
 
 
 import math
-from brain_games.games.brain_even import welcome_user
-from brain_games.games.brain_even import game_check
-from brain_games.games.brain_even import random
+import random
+from brain_games.games.functions import welcome_user
+from brain_games.games.functions import game_check
 
 
 # Функция создания списка пар чисел для нахождения НОД

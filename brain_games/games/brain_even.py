@@ -2,7 +2,8 @@
 
 
 import random
-import prompt
+from brain_games.games.functions import welcome_user
+from brain_games.games.functions import game_check
 
 
 # Функция заполнения списка случайными целыми числами
@@ -14,14 +15,6 @@ def random_numbers():
         five_numbers.append(number)
         iteration += 1
     return five_numbers
-
-
-# Приветствие и ввод имени пользователя(универсальный)
-def welcome_user():
-    print('Welcome to the Brain Games!')
-    global name
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
 
 
 # Проверка на четность, создание списка правильных ответов
@@ -47,22 +40,6 @@ def question_check_list():
 # Условие игры четное-нечетное
 def condition_even():
     print('Answer "yes" if the number is even, otherwise answer "no".')
-
-
-# Ввод и проверка ответов(универсальный)
-def game_check(question_check_list):
-    for question, check in question_check_list:
-        print(f'Question: {question}')
-        answer = prompt.string('Your answer: ')
-        if answer == check:
-            print('Correct!')
-            continue
-        elif answer != check:
-            print(f"'{answer}' is wrong answer;(. Correct answer is '{check}'.")
-            print(f"Let's try again, {name}!")
-            break
-    else:
-        print(f'Congratulations, {name}!')
 
 
 def main():

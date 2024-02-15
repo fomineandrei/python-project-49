@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 
 
-from brain_games.games.brain_even import welcome_user
-from brain_games.games.brain_even import game_check
-from brain_games.games.brain_even import random
-
+import random
+from brain_games.games.functions import welcome_user
+from brain_games.games.functions import game_check
 
 # Функция создания списка вопросов Простое это число?
 # Каждое значение списка заполняется из интервала от 2 до 100 случайным числом
@@ -31,6 +30,8 @@ def question_check_func(random_numbers_prime):
     check_list = []
     questions_list = random_numbers_prime
     for number in questions_list:
+        # Начинаем делить с двойки, так как все натуральные числа
+        # делятся на 1 без остатка
         i = 2
         while i < number // 2:
             if number % i != 0:

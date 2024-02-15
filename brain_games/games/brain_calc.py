@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
 
-from brain_games.games.brain_even import welcome_user
-from brain_games.games.brain_even import random
-from brain_games.games.brain_even import game_check
+import random
+from brain_games.games.functions import welcome_user
+from brain_games.games.functions import game_check
 
 
 # Функция создания списка арифметических выражений
