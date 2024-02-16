@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 
 
 import math
@@ -37,11 +36,7 @@ def condition_gcd():
     print('Find the greatest common divisor of given numbers.')
 
 
-def main():
+def game_gcd():
     welcome_user()
     condition_gcd()
     game_check(question_check_func(random_numbers_pairs()))
-
-
-if __name__ == '__main__':
-    main()

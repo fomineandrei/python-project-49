@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 
 
 import random
@@ -46,11 +45,7 @@ def condition_progression():
     print('What number is missing in the progression?')
 
 
-def main():
+def game_progression():
     welcome_user()
     condition_progression()
     game_check(question_check_func(random_progressions()))
-
-
-if __name__ == '__main__':
-    main()

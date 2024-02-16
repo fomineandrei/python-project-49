@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 
 
 import random
@@ -51,11 +50,7 @@ def condition_calc():
     print('What is the result of the expression?')
 
 
-def main():
+def game_calc():
     welcome_user()
     condition_calc()
     game_check(check_list())
-
-
-if __name__ == '__main__':
-    main()

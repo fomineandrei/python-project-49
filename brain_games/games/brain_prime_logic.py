@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 
 
 import random
@@ -28,8 +27,8 @@ def random_numbers_prime():
 
 # Функция создания списка вопрос - ответ Простое число?
 def question_check_func(random_numbers_prime):
-    check_list = []
     questions_list = random_numbers_prime
+    check_list = []
     for number in questions_list:
         # Начинаем делить с двойки, так как все натуральные числа
         # делятся на 1 без остатка
@@ -52,11 +51,7 @@ def condition_prime():
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
 
-def main():
+def game_prime():
     welcome_user()
     condition_prime()
     game_check(question_check_func(random_numbers_prime()))
-
-
-if __name__ == '__main__':
-    main()

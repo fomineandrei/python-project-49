@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 
 
 import random
@@ -42,11 +41,7 @@ def condition_even():
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
 
-def main():
+def game_even():
     welcome_user()
     condition_even()
     game_check(question_check_list())
-
-
-if __name__ == '__main__':
-    main()
