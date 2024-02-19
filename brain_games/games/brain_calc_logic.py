@@ -4,7 +4,7 @@ import random
 
 
 # Условие игры Калькулятор
-CALC_CONDITION = 'What is the result of the expression?'
+CALC = 'What is the result of the expression?'
 
 
 # Функция создания списка арифметических выражений

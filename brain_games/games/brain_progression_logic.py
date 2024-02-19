@@ -4,7 +4,7 @@ import random
 
 
 # условие игры Арифметическая прогрессия
-PROG_CONDITION = 'What number is missing in the progression?'
+PROG = 'What number is missing in the progression?'
 
 
 # Функция заполнения листа вопросов

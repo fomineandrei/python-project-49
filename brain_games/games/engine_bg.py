@@ -1,11 +1,11 @@
 
 
 import prompt
-from brain_games.games.brain_even_logic import EVEN_CONDITION, question_check_even
-from brain_games.games.brain_calc_logic import CALC_CONDITION, question_check_calc
-from brain_games.games.brain_gcd_logic import GCD_CONDITION, question_check_gcd
-from brain_games.games.brain_progression_logic import PROG_CONDITION, question_check_prog
-from brain_games.games.brain_prime_logic import PRIM_CONDITION, question_check_prim
+from brain_games.games.brain_even_logic import EVEN, question_check_even
+from brain_games.games.brain_calc_logic import CALC, question_check_calc
+from brain_games.games.brain_gcd_logic import GCD, question_check_gcd
+from brain_games.games.brain_progression_logic import PROG, question_check_prog
+from brain_games.games.brain_prime_logic import PRIM, question_check_prim
 
 
 # Приветствие и ввод имени пользователя(универсальный)
@@ -40,29 +40,29 @@ def game_condition(game_type):
 # Функции логики игр
 def game_even():
     welcome_user()
-    game_condition(EVEN_CONDITION)
+    game_condition(EVEN)
     game_check(question_check_even())
 
 
 def game_calc():
     welcome_user()
-    game_condition(CALC_CONDITION)
+    game_condition(CALC)
     game_check(question_check_calc())
 
 
 def game_gcd():
     welcome_user()
-    game_condition(GCD_CONDITION)
+    game_condition(GCD)
     game_check(question_check_gcd())
 
 
 def game_prog():
     welcome_user()
-    game_condition(PROG_CONDITION)
+    game_condition(PROG)
     game_check(question_check_prog())
 
 
 def game_prim():
     welcome_user()
-    game_condition(PRIM_CONDITION)
+    game_condition(PRIM)
     game_check(question_check_prim())

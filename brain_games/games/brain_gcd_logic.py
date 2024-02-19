@@ -5,7 +5,7 @@ import random
 
 
 # Услловие игры Наибольший Общий Делителm
-GCD_CONDITION = 'Find the greatest common divisor of given numbers.'
+GCD = 'Find the greatest common divisor of given numbers.'
 
 
 # Функция создания списка пар чисел для нахождения НОД

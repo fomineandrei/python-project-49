@@ -4,7 +4,7 @@ import random
 
 
 # условие игры Простое число
-PRIM_CONDITION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+PRIM = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 # Функция создания списка вопросов Простое это число?

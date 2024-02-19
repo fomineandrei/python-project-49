@@ -4,7 +4,7 @@ import random
 
 
 # Условия игры brain_even
-EVEN_CONDITION = 'Answer "yes" if the number is even, otherwise answer "no".'
+EVEN = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 # Функция заполнения списка случайными целыми числами
