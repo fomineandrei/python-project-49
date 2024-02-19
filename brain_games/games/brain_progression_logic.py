@@ -1,8 +1,10 @@
 
 
 import random
-from brain_games.games.functions import welcome_user
-from brain_games.games.functions import game_check
+
+
+# условие игры Арифметическая прогрессия
+PROG_CONDITION = 'What number is missing in the progression?'
 
 
 # Функция заполнения листа вопросов
@@ -26,9 +28,9 @@ def random_progressions():
 
 
 # Функция заполнения листа вопрос - ответ
-def question_check_func(random_progressions):
+def question_check_prog():
     check_list = []
-    progressions_list = random_progressions
+    progressions_list = random_progressions()
     for progression in progressions_list:
         index = random.randint(0, 9)
         check_list.append(progression[index])
@@ -38,14 +40,3 @@ def question_check_func(random_progressions):
         question_list.append(" ".join(progression))
     question_check_list = list(zip(question_list, check_list))
     return question_check_list
-
-
-# Функция условий игры Арифметическая прогрессия
-def condition_progression():
-    print('What number is missing in the progression?')
-
-
-def game_progression():
-    welcome_user()
-    condition_progression()
-    game_check(question_check_func(random_progressions()))

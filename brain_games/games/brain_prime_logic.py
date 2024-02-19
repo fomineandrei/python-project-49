@@ -1,8 +1,10 @@
 
 
 import random
-from brain_games.games.functions import welcome_user
-from brain_games.games.functions import game_check
+
+
+# условие игры Простое число
+PRIM_CONDITION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 # Функция создания списка вопросов Простое это число?
@@ -26,8 +28,8 @@ def random_numbers_prime():
 
 
 # Функция создания списка вопрос - ответ Простое число?
-def question_check_func(random_numbers_prime):
-    questions_list = random_numbers_prime
+def question_check_prim():
+    questions_list = random_numbers_prime()
     check_list = []
     for number in questions_list:
         # Начинаем делить с двойки, так как все натуральные числа
@@ -44,14 +46,3 @@ def question_check_func(random_numbers_prime):
             check_list.append('yes')
     question_check_list = list(zip(questions_list, check_list))
     return question_check_list
-
-
-# Функция условий игры Простое число
-def condition_prime():
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
-
-
-def game_prime():
-    welcome_user()
-    condition_prime()
-    game_check(question_check_func(random_numbers_prime()))

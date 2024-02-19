@@ -1,8 +1,10 @@
 
 
 import random
-from brain_games.games.functions import welcome_user
-from brain_games.games.functions import game_check
+
+
+# Условие игры Калькулятор
+CALC_CONDITION = 'What is the result of the expression?'
 
 
 # Функция создания списка арифметических выражений
@@ -38,19 +40,8 @@ def check_calc(questions_list):
 
 
 # Функция создвния списка пар вопрос-правильный ответ
-def check_list():
+def question_check_calc():
     question = random_calc()
     check = check_calc(question)
     check_list = list(zip(question, check))
     return check_list
-
-
-# Условие игры Калькулятор
-def condition_calc():
-    print('What is the result of the expression?')
-
-
-def game_calc():
-    welcome_user()
-    condition_calc()
-    game_check(check_list())

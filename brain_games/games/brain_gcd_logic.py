@@ -2,8 +2,10 @@
 
 import math
 import random
-from brain_games.games.functions import welcome_user
-from brain_games.games.functions import game_check
+
+
+# Услловие игры Наибольший Общий Делителm
+GCD_CONDITION = 'Find the greatest common divisor of given numbers.'
 
 
 # Функция создания списка пар чисел для нахождения НОД
@@ -20,8 +22,8 @@ def random_numbers_pairs():
 
 
 # Функция создания списка вопрос - ответ
-def question_check_func(random_numbers_pairs):
-    questions_list, pairs_list = random_numbers_pairs
+def question_check_gcd():
+    questions_list, pairs_list = random_numbers_pairs()
     gcd_list = []
     for pair in pairs_list:
         a, b = pair
@@ -29,14 +31,3 @@ def question_check_func(random_numbers_pairs):
         gcd_list.append(str(gcd))
     questions_check_list = list(zip(questions_list, gcd_list))
     return questions_check_list
-
-
-# Услловие игры Наибольший Общий Делитель
-def condition_gcd():
-    print('Find the greatest common divisor of given numbers.')
-
-
-def game_gcd():
-    welcome_user()
-    condition_gcd()
-    game_check(question_check_func(random_numbers_pairs()))

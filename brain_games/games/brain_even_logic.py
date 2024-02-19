@@ -1,8 +1,10 @@
 
 
 import random
-from brain_games.games.functions import welcome_user
-from brain_games.games.functions import game_check
+
+
+# Условия игры brain_even
+EVEN_CONDITION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 # Функция заполнения списка случайными целыми числами
@@ -29,19 +31,8 @@ def check_func_even(question_list):
 
 
 # Создание списка вопрос-ответ
-def question_check_list():
+def question_check_even():
     question = random_numbers()
     check = check_func_even(question)
     question_check_list = list(zip(question, check))
     return question_check_list
-
-
-# Условие игры четное-нечетное
-def condition_even():
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-
-
-def game_even():
-    welcome_user()
-    condition_even()
-    game_check(question_check_list())
