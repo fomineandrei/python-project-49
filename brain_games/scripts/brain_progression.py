@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 
 
-from brain_games.games.brain_progression_logic import PROG, question_check_prog
-from brain_games.games.engine_bg import game_bg
+from brain_games.games.brain_progression_logic import PROG
+from brain_games.games.engine_bg import game_check
 
 
 def main():
-    game_bg(question_check_prog(), PROG)
+    game_check(PROG)
 
 
 if __name__ == '__main__':
