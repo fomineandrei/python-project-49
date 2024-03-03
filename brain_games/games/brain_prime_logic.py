@@ -9,6 +9,8 @@ PRIM = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 # Функция,которая проверяет простое ли число.
 def is_prime(num):
+    if num == 1:
+        return False
     """Начинаем с 2, потомо что все числа деляться на 1 без остатка"""
     i = 2
     while i < num // 2:
