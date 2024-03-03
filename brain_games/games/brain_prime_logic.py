@@ -12,13 +12,15 @@ def is_prime(num):
     """Начинаем с 2, потомо что все числа деляться на 1 без остатка"""
     i = 2
     while i < num // 2:
-        check = (num % i != 0)
-        if check is False:
+        if (num % i != 0) is False:
+            return False
             break
         i += 1
-    return check
+    else:
+        return True
 
 
+# Функция формирования кортежа "вопрос - правильный ответ"
 def question_check_prim():
     prime_numbers = [
         2, 3, 5, 7, 11, 13, 17,
