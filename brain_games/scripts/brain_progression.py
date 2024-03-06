@@ -2,7 +2,7 @@
 
 
 from brain_games.games.brain_progression_logic import PROG
-from brain_games.games.engine_bg import game_check
+from brain_games.engine_bg import game_check
 
 
 def main():

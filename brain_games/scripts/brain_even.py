@@ -2,7 +2,7 @@
 
 
 from brain_games.games.brain_even_logic import EVEN
-from brain_games.games.engine_bg import game_check
+from brain_games.engine_bg import game_check
 
 
 def main():
