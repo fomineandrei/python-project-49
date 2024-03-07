@@ -5,13 +5,15 @@ import itertools
 
 
 # Условие игры Калькулятор
-CALC = 'What is the result of the expression?'
+RULES = 'What is the result of the expression?'
 # Циклический итератор вариантов математических операций
 OPERATION_VARIANTS = itertools.cycle(['summ', 'diff', 'mult'])
+# Имя модуля
+MODULE = 'brain_games.games.brain_calc_logic'
 
 
 # Функция создания кортежа "вопрос - правильный ответ"
-def question_check_calc():
+def question_check():
     a = random.randint(20, 200)
     b = random.randint(20, 200)
     c = random.randint(300, 500)

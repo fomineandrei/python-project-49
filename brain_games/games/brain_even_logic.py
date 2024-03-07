@@ -4,7 +4,9 @@ import random
 
 
 # Условия игры brain_even
-EVEN = 'Answer "yes" if the number is even, otherwise answer "no".'
+RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
+# Имя модуля
+MODULE = 'brain_games.games.brain_even_logic'
 
 
 # Функция проверки случайных чисел на четность
@@ -14,7 +16,7 @@ def even_check(num: int) -> bool:
 
 
 # Функция формирования кортежа "вопрос - правильный ответ"
-def question_check_even():
+def question_check():
     num = random.randint(1, 999)
     if even_check(num) is True:
         return (num, 'yes')

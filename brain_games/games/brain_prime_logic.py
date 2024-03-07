@@ -4,7 +4,9 @@ import random
 
 
 # условие игры Простое число
-PRIM = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+# Имя модуля
+MODULE = 'brain_games.games.brain_prime_logic'
 
 
 # Функция,которая проверяет простое ли число.
@@ -23,7 +25,7 @@ def is_prime(num):
 
 
 # Функция формирования кортежа "вопрос - правильный ответ"
-def question_check_prim():
+def question_check():
     prime_numbers = [
         2, 3, 5, 7, 11, 13, 17,
         19, 23, 29, 31, 37, 41,
