@@ -2,11 +2,11 @@
 
 
 from brain_games.engine_bg import game_check
-from brain_games.games.brain_gcd_logic import MODULE, RULES, question_check
+from brain_games.games import brain_gcd_logic
 
 
 def main():
-    game_check(MODULE, [RULES, question_check])
+    game_check(brain_gcd_logic)
 
 
 if __name__ == '__main__':

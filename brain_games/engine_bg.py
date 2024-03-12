@@ -15,8 +15,7 @@ def welcome_user():
 
 
 # Ввод и проверка ответов(универсальный)
-def game_check(module, attributes):
-    game = __import__(module, globals(), locals(), attributes, 0)
+def game_check(game):
     name = welcome_user()
     print(game.RULES)
     game_round = 1
