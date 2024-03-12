@@ -5,8 +5,6 @@ import random
 
 # условие игры Простое число
 RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-# Имя модуля
-MODULE = 'brain_games.games.brain_prime_logic'
 
 
 # Функция,которая проверяет простое ли число.

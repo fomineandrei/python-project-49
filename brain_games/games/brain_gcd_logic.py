@@ -6,8 +6,6 @@ import random
 
 # Условие игры Наибольший Общий Делителm
 RULES = 'Find the greatest common divisor of given numbers.'
-# Имя модуля
-MODULE = 'brain_games.games.brain_gcd_logic'
 
 
 # Функция создания списка пар чисел для нахождения НОД

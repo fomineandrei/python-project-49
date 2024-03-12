@@ -6,34 +6,38 @@ import random
 # условие игры Арифметическая прогрессия
 RULES = 'What number is missing in the progression?'
 # Длина прогрессии
-PROGRESSION_LENGTH = 10
-# Имя модуля
-MODULE = 'brain_games.games.brain_progression_logic'
+PROG_LENGTH = 10
+# Начало прогрессии
+START_RANGE = 70
+# Шаг прогрессии
+STEP_RANGE = 15
+# Индекс скрываемого числа прогрессии
+INDEX_RANGE = PROG_LENGTH - 1
 
 
 # Функция создания арифметической прогрессии
-def random_progression():
-    start = random.randint(1, 70)
-    step = random.randint(1, 15)
+def random_progression(start, step, length):
+    start_prog = random.randint(1, start)
+    step_prog = random.randint(1, step)
     progression = []
     i = 0
-    while i < PROGRESSION_LENGTH:
-        progression.append(str(start))
-        start = start + step
+    while i < length:
+        progression.append(str(start_prog))
+        start_prog = start_prog + step_prog
         i += 1
     return progression
 
 
 # Функция создания строки вопроса
-def progression_string(progression):
-    index = random.randint(0, 9)
-    check = progression[index]
-    progression[index] = '..'
+def progression_string(progression, index):
+    random_index = random.randint(1, index)
+    check = progression[random_index]
+    progression[random_index] = '..'
     return " ".join(progression), check
 
 
 # Функция заполнения листа вопросов
 def question_check():
-    progression = random_progression()
-    question, check = progression_string(progression)
+    progression = random_progression(START_RANGE, STEP_RANGE, PROG_LENGTH)
+    question, check = progression_string(progression, INDEX_RANGE)
     return (question, check)

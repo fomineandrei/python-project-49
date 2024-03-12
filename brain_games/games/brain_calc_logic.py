@@ -8,8 +8,6 @@ import itertools
 RULES = 'What is the result of the expression?'
 # Циклический итератор вариантов математических операций
 OPERATION_VARIANTS = itertools.cycle(['summ', 'diff', 'mult'])
-# Имя модуля
-MODULE = 'brain_games.games.brain_calc_logic'
 
 
 # Функция создания кортежа "вопрос - правильный ответ"

@@ -5,8 +5,6 @@ import random
 
 # Условия игры brain_even
 RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
-# Имя модуля
-MODULE = 'brain_games.games.brain_even_logic'
 
 
 # Функция проверки случайных чисел на четность
