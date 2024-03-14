@@ -15,12 +15,12 @@ def welcome_user():
 
 
 # Ввод и проверка ответов(универсальный)
-def game_check(game):
+def game_launch(game):
     name = welcome_user()
     print(game.RULES)
     game_round = 1
     while game_round <= ROUNDS_NUM:
-        question, check = game.question_check()
+        question, check = game.question_answer_pair()
         print(f'Question: {question}')
         answer = input('Your answer: ')
         if str(answer) == check:

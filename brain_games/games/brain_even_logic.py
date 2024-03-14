@@ -14,7 +14,7 @@ def even_check(num: int) -> bool:
 
 
 # Функция формирования кортежа "вопрос - правильный ответ"
-def question_check():
+def question_answer_pair():
     num = random.randint(1, 999)
     if even_check(num) is True:
         return (num, 'yes')

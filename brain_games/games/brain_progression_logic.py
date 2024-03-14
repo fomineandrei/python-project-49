@@ -36,7 +36,7 @@ def progression_string(progression, index):
 
 
 # Функция заполнения листа вопросов
-def question_check():
+def question_answer_pair():
     start_rand = random.randint(*START_RANGE)
     step_rand = random.randint(*STEP_RANGE)
     index_rand = random.randint(*INDEX_RANGE)

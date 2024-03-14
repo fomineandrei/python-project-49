@@ -11,7 +11,7 @@ OPERATION_VARIANTS = itertools.cycle(['summ', 'diff', 'mult'])
 
 
 # Функция создания кортежа "вопрос - правильный ответ"
-def question_check():
+def question_answer_pair():
     a = random.randint(20, 200)
     b = random.randint(20, 200)
     c = random.randint(300, 500)

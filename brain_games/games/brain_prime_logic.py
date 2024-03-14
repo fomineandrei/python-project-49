@@ -23,7 +23,7 @@ def is_prime(num):
 
 
 # Функция формирования кортежа "вопрос - правильный ответ"
-def question_check():
+def question_answer_pair():
     prime_numbers = [
         2, 3, 5, 7, 11, 13, 17,
         19, 23, 29, 31, 37, 41,
