@@ -12,7 +12,7 @@ START_RANGE = [1, 70]
 # Шаг прогрессии
 STEP_RANGE = [1, 15]
 # Индекс скрываемого числа прогрессии
-INDEX_RANGE = [1, PROG_LENGTH - 1]
+INDEX_RANGE = [0, PROG_LENGTH - 1]
 
 
 # Функция создания арифметической прогрессии
@@ -20,7 +20,7 @@ def random_progression(start, step, length):
     progression = []
     i = 0
     while i < length:
-        progression.append(str(start))
+        progression.append(start)
         start = start + step
         i += 1
     return progression
@@ -28,9 +28,11 @@ def random_progression(start, step, length):
 
 # Функция создания строки вопроса
 def progression_string(progression, index):
+    for indx, element in enumerate(progression):
+        progression[indx] = str(element)
     check = progression[index]
     progression[index] = '..'
-    return " ".join(progression), check
+    return ' '.join(progression), check
 
 
 # Функция заполнения листа вопросов
